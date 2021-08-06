@@ -1,1 +1,0 @@
-INFO     ttp:base_api.py:42 test_contents_is_creat_favored: 用例通过，请求时间：0.204967s

@@ -1,1 +1,0 @@
-INFO     homepage:base_api.py:42 test_homepage_grid_cells: 用例通过，请求时间：0.623841s

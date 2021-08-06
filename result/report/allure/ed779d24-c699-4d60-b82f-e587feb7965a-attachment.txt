@@ -1,1 +1,0 @@
-INFO     TestComment:base_api.py:42 test_ban_state: 用例通过，请求时间：0.201408s

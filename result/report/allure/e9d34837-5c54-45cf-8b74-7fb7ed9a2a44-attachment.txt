@@ -1,1 +1,0 @@
-INFO     topic:base_api.py:42 test_topic_homepage: 用例通过，请求时间：3.24951s

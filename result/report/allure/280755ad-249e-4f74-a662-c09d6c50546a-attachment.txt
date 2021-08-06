@@ -1,1 +1,0 @@
-INFO     search:base_api.py:42 test_search_resource: 用例通过，请求时间：0.27458s

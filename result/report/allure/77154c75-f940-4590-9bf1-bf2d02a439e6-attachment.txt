@@ -1,1 +1,0 @@
-INFO     ttp:base_api.py:42 test_tab: 用例通过，请求时间：1.04136s

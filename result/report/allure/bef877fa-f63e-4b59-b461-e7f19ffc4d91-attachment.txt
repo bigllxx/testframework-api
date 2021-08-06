@@ -1,1 +1,0 @@
-INFO     notifications:base_api.py:42 test_notifications: 用例通过，请求时间：0.221387s

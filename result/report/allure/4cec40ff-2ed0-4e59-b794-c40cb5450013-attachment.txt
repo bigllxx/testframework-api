@@ -1,1 +1,0 @@
-INFO     TestComment:base_api.py:42 test_liked_comment: 用例通过，请求时间：0.204976s

@@ -1,1 +1,0 @@
-INFO     ttp:base_api.py:42 test_creat_contents: 用例通过，请求时间：0.253885s

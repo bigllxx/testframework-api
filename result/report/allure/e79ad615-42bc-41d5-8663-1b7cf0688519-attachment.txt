@@ -1,1 +1,0 @@
-INFO     homepage:base_api.py:42 test_recommend_grid_cell: 用例通过，请求时间：0.536881s

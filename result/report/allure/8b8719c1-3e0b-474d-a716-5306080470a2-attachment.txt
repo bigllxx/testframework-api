@@ -1,1 +1,0 @@
-INFO     label:base_api.py:42 test_labels_id: 用例通过，请求时间：0.1984s

@@ -1,1 +1,0 @@
-INFO     checklist:base_api.py:42 test_get_checklists: 用例通过，请求时间：0.256639s

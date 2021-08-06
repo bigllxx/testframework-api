@@ -1,1 +1,0 @@
-INFO     label:base_api.py:42 test_label_groups: 用例通过，请求时间：0.196043s

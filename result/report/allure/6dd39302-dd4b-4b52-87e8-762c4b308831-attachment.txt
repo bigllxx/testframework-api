@@ -1,1 +1,0 @@
-INFO     ttp:base_api.py:42 test_author_id_content: 用例通过，请求时间：0.2446s
