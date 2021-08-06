@@ -1,6 +1,0 @@
-
-tpython:S1192_"\Define a constant instead of duplicating this literal 'assert "list" in res.json()' 3 times.(¬Í—¸
-{python:S1192#"^Define a constant instead of duplicating this literal 'assert res.status_code == 200' 5 times.(Ÿú‚ıÿÿÿÿ
-Tpython:S5754"<Specify an exception class to catch or reraise the exception(ˆÊÉ·
-Tpython:S5754"<Specify an exception class to catch or reraise the exception(ˆÊÉ·
-<python:S125‡"Remove this commented out code.(´æşÿÿÿÿ

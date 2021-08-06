@@ -1,2 +1,0 @@
-
-vpython:S1192$"^Define a constant instead of duplicating this literal 'assert res.status_code == 200' 4 times.(ÎÓ÷Ø
