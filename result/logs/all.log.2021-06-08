@@ -1,0 +1,158 @@
+2021-06-08 14:44:03,992 - topic - INFO - test_topic_homepage: 用例通过，请求时间：0.219576s
+2021-06-08 14:58:45,350 - topic - ERROR - test_topic_homepage: 断言失败 
+ 参数：{'headers': None, 'json': None, 'method': 'get', 'params': None, 'url': 'https://api-test-hula.mampod.cn/v2/topic/homepage'} 
+ 返回值: {"code":99999,"msg":"系统繁忙，请稍后再试!","userMsg":"系统繁忙，请稍后再试!"}
+2021-06-08 14:58:57,308 - topic - ERROR - test_topic_all: 断言失败 
+ 参数：{'headers': None, 'json': None, 'method': 'get', 'params': None, 'url': 'https://api-test-hula.mampod.cn/v2/topic/all'} 
+ 返回值: {"code":99999,"msg":"系统繁忙，请稍后再试!","userMsg":"系统繁忙，请稍后再试!"}
+2021-06-08 15:00:52,324 - topic - WARNING - 获取topic_id失败
+2021-06-08 15:00:52,511 - topic - ERROR - test_topic_homepage: 断言失败 
+ 参数：{'headers': None, 'json': None, 'method': 'get', 'params': None, 'url': 'https://api-test-hula.mampod.cn/v2/topic/homepage'} 
+ 返回值: {"code":99999,"msg":"系统繁忙，请稍后再试!","userMsg":"系统繁忙，请稍后再试!"}
+2021-06-08 15:03:45,990 - topic - WARNING - 获取topic_id失败
+2021-06-08 15:06:41,282 - topic - WARNING - 获取topic_id失败
+2021-06-08 15:06:47,181 - topic - WARNING - 获取topic_id失败
+2021-06-08 15:07:00,710 - topic - WARNING - 获取topic_id失败
+2021-06-08 15:08:27,171 - topic - WARNING - 获取topic_id失败
+2021-06-08 15:08:48,909 - topic - WARNING - 获取topic_id失败
+2021-06-08 15:09:51,134 - topic - WARNING - 获取topic_id失败
+2021-06-08 15:17:16,625 - topic - WARNING - 获取topic_id失败
+2021-06-08 15:17:51,710 - topic - WARNING - 获取topic_id失败
+2021-06-08 15:19:15,237 - topic - INFO - test_author_me_topic: 用例通过，请求时间：0.223733s
+2021-06-08 15:19:25,493 - topic - WARNING - 获取topic_id失败
+2021-06-08 15:48:46,042 - topic - INFO - test_topic_homepage: 用例通过，请求时间：0.219686s
+2021-06-08 15:49:13,963 - topic - INFO - test_topic_content: 用例通过，请求时间：0.27142s
+2021-06-08 16:56:53,383 - topic - INFO - test_topic_homepage: 用例通过，请求时间：0.225444s
+2021-06-08 16:56:53,597 - topic - INFO - test_topic_all: 用例通过，请求时间：0.194729s
+2021-06-08 16:56:53,826 - topic - INFO - test_topic_details: 用例通过，请求时间：0.212817s
+2021-06-08 16:56:54,060 - topic - INFO - test_topic_follow: 用例通过，请求时间：0.2193s
+2021-06-08 16:56:54,279 - topic - INFO - test_topic_unfollow: 用例通过，请求时间：0.207115s
+2021-06-08 16:56:54,802 - topic - INFO - test_topic_content: 用例通过，请求时间：0.243799s
+2021-06-08 16:56:55,024 - topic - INFO - test_author_me_topic: 用例通过，请求时间：0.206769s
+2021-06-08 16:57:30,828 - checklist - INFO - test_patch_checklists: 用例通过，请求时间：0.207653s
+2021-06-08 16:57:30,873 - checklist - INFO - test_checklists: 用例通过，请求时间：0.192943s
+2021-06-08 16:57:31,043 - checklist - INFO - test_author_me_checklists: 用例通过，请求时间：0.276111s
+2021-06-08 16:57:31,085 - checklist - INFO - test_checklists_liked: 用例通过，请求时间：0.243206s
+2021-06-08 16:57:31,143 - checklist - INFO - test_get_checklists: 用例通过，请求时间：0.256639s
+2021-06-08 16:57:31,245 - checklist - INFO - test_patch_checklists: 用例通过，请求时间：0.189195s
+2021-06-08 16:57:31,390 - checklist - INFO - test_checklists_favored: 用例通过，请求时间：0.238499s
+2021-06-08 16:57:31,585 - checklist - INFO - test_delete_checklists_favored: 用例通过，请求时间：0.239065s
+2021-06-08 16:57:31,639 - checklist - INFO - test_add_contents_checklists: 用例通过，请求时间：0.239823s
+2021-06-08 16:57:31,735 - checklist - INFO - test_delete_checklists_liked: 用例通过，请求时间：0.248776s
+2021-06-08 16:57:31,784 - checklist - INFO - test_checklists_contents: 用例通过，请求时间：0.188871s
+2021-06-08 16:57:32,024 - checklist - INFO - test_author_me_checklists_add: 用例通过，请求时间：0.279002s
+2021-06-08 16:57:32,026 - checklist - INFO - test_delete_checklists: 用例通过，请求时间：0.232909s
+2021-06-08 16:57:32,134 - checklist - INFO - test_remove_checklists_contents: 用例通过，请求时间：0.236978s
+2021-06-08 16:57:32,231 - checklist - INFO - test_checklists_share: 用例通过，请求时间：0.192499s
+2021-06-08 16:57:32,351 - checklist - INFO - test_checklists_mark: 用例通过，请求时间：0.207002s
+2021-06-08 16:57:32,504 - checklist - INFO - test_get_contents_checklists: 用例通过，请求时间：0.2205s
+2021-06-08 16:57:32,608 - checklist - INFO - test_batch_content_checklists: 用例通过，请求时间：0.244541s
+2021-06-08 16:57:33,362 - checklist - INFO - test_checklists_feeds: 用例通过，请求时间：0.815573s
+2021-06-08 16:57:33,454 - TestComment - INFO - test_get_comments: 用例通过，请求时间：0.176556s
+2021-06-08 16:57:33,637 - TestComment - INFO - test_get_comments: 用例通过，请求时间：0.176589s
+2021-06-08 16:57:33,998 - TestComment - INFO - test_creat_comments: 用例通过，请求时间：0.348131s
+2021-06-08 16:57:34,227 - TestComment - INFO - test_creat_comments: 用例通过，请求时间：0.415447s
+2021-06-08 16:57:34,234 - checklist - INFO - test_author_checklists: 用例通过，请求时间：0.433094s
+2021-06-08 16:57:34,442 - TestComment - INFO - test_ban_state: 用例通过，请求时间：0.201408s
+2021-06-08 16:57:34,890 - TestComment - INFO - test_report_comment: 用例通过，请求时间：0.212504s
+2021-06-08 16:57:35,175 - TestComment - INFO - test_delete_liked: 用例通过，请求时间：0.221839s
+2021-06-08 16:57:35,330 - TestComment - INFO - test_creat_comments: 用例通过，请求时间：0.184471s
+2021-06-08 16:57:35,439 - TestComment - INFO - test_delete_comments: 用例通过，请求时间：0.202137s
+2021-06-08 16:57:35,794 - goods - INFO - test_goods_parse: 用例通过，请求时间：0.196788s
+2021-06-08 16:57:35,920 - TestComment - INFO - test_creat_comments_too: 用例通过，请求时间：0.288812s
+2021-06-08 16:57:36,003 - goods - INFO - test_goods_parse: 用例通过，请求时间：0.196728s
+2021-06-08 16:57:36,218 - goods - INFO - test_goods_parse: 用例通过，请求时间：0.201407s
+2021-06-08 16:57:36,311 - label - INFO - test_labels_id: 用例通过，请求时间：0.1984s
+2021-06-08 16:57:36,420 - goods - INFO - test_goods_parse: 用例通过，请求时间：0.187901s
+2021-06-08 16:57:36,444 - TestComment - INFO - test_liked_comment: 用例通过，请求时间：0.204976s
+2021-06-08 16:57:36,614 - goods - INFO - test_goods_parse: 用例通过，请求时间：0.184507s
+2021-06-08 16:57:36,741 - label - INFO - test_labels_id_contents: 用例通过，请求时间：0.216449s
+2021-06-08 16:57:36,819 - goods - INFO - test_goods_parse: 用例通过，请求时间：0.192179s
+2021-06-08 16:57:36,953 - label - INFO - test_label: 用例通过，请求时间：0.200334s
+2021-06-08 16:57:37,021 - goods - INFO - test_goods_parse: 用例通过，请求时间：0.186332s
+2021-06-08 16:57:37,213 - goods - INFO - test_goods_parse: 用例通过，请求时间：0.187748s
+2021-06-08 16:57:37,382 - homepage - INFO - test_homepage_banners: 用例通过，请求时间：0.347599s
+2021-06-08 16:57:37,768 - label - INFO - test_label_content: 用例通过，请求时间：0.225156s
+2021-06-08 16:57:38,015 - homepage - INFO - test_homepage_grid_cells: 用例通过，请求时间：0.623841s
+2021-06-08 16:57:38,227 - label - INFO - test_label_content: 用例通过，请求时间：0.224199s
+2021-06-08 16:57:38,559 - homepage - INFO - test_recommend_grid_cell: 用例通过，请求时间：0.536881s
+2021-06-08 16:57:38,588 - misc - INFO - test_health_check: 用例通过，请求时间：0.34865s
+2021-06-08 16:57:38,748 - Relationship - INFO - test_follow: 用例通过，请求时间：0.202735s
+2021-06-08 16:57:38,764 - label - INFO - test_label_groups: 用例通过，请求时间：0.196043s
+2021-06-08 16:57:38,790 - misc - INFO - test_splash_screen: 用例通过，请求时间：0.192425s
+2021-06-08 16:57:38,957 - Relationship - INFO - test_unfollow: 用例通过，请求时间：0.200429s
+2021-06-08 16:57:38,960 - label - INFO - test_labels_search: 用例通过，请求时间：0.186025s
+2021-06-08 16:57:39,022 - notifications - INFO - test_notifications: 用例通过，请求时间：0.221387s
+2021-06-08 16:57:39,177 - label - INFO - test_labels_search: 用例通过，请求时间：0.204783s
+2021-06-08 16:57:39,388 - label - INFO - test_labels_search: 用例通过，请求时间：0.197037s
+2021-06-08 16:57:39,482 - notifications - INFO - test_notification_mark: 用例通过，请求时间：0.204646s
+2021-06-08 16:57:39,698 - notifications - INFO - test_notification_has_new: 用例通过，请求时间：0.204167s
+2021-06-08 16:57:39,930 - sms - INFO - test_sms_send: 用例通过，请求时间：0.524031s
+2021-06-08 16:57:40,265 - sms - INFO - test_sms_send: 用例通过，请求时间：0.321891s
+2021-06-08 16:57:40,346 - Relationship - INFO - test_get_follows: 用例通过，请求时间：0.356215s
+2021-06-08 16:57:40,943 - sms - INFO - test_sms_send: 用例通过，请求时间：0.666022s
+2021-06-08 16:57:44,627 - topic - INFO - test_topic_homepage: 用例通过，请求时间：3.24951s
+2021-06-08 16:57:44,715 - Relationship - INFO - test_get_fans: 用例通过，请求时间：4.354138s
+2021-06-08 16:57:45,030 - topic - INFO - test_topic_all: 用例通过，请求时间：0.3919s
+2021-06-08 16:57:45,159 - search - INFO - test_search_resource: 用例通过，请求时间：6.114967s
+2021-06-08 16:57:45,262 - topic - INFO - test_topic_details: 用例通过，请求时间：0.220466s
+2021-06-08 16:57:45,481 - topic - INFO - test_topic_follow: 用例通过，请求时间：0.206765s
+2021-06-08 16:57:45,703 - topic - INFO - test_topic_unfollow: 用例通过，请求时间：0.208329s
+2021-06-08 16:57:46,314 - ttp - INFO - test_me_contents: 用例通过，请求时间：0.222018s
+2021-06-08 16:57:46,515 - ttp - INFO - test_me_search_my_contents: 用例通过，请求时间：0.186218s
+2021-06-08 16:57:46,524 - topic - INFO - test_topic_content: 用例通过，请求时间：0.245595s
+2021-06-08 16:57:46,751 - ttp - INFO - test_me_search_my_contents: 用例通过，请求时间：0.217153s
+2021-06-08 16:57:46,972 - ttp - INFO - test_me_search_my_contents: 用例通过，请求时间：0.203863s
+2021-06-08 16:57:47,069 - topic - INFO - test_author_me_topic: 用例通过，请求时间：0.531882s
+2021-06-08 16:57:47,094 - search - INFO - test_search_resource: 用例通过，请求时间：1.852706s
+2021-06-08 16:57:47,184 - ttp - INFO - test_me: 用例通过，请求时间：0.197289s
+2021-06-08 16:57:47,383 - search - INFO - test_search_resource: 用例通过，请求时间：0.27458s
+2021-06-08 16:57:47,653 - search - INFO - test_search_resource: 用例通过，请求时间：0.252745s
+2021-06-08 16:57:47,885 - search - INFO - test_search_suggest: 用例通过，请求时间：0.215605s
+2021-06-08 16:57:48,117 - search - INFO - test_search_suggest: 用例通过，请求时间：0.215082s
+2021-06-08 16:57:48,346 - search - INFO - test_search_suggest: 用例通过，请求时间：0.211736s
+2021-06-08 16:57:48,349 - ttp - INFO - test_tab: 用例通过，请求时间：1.04136s
+2021-06-08 16:57:48,361 - ttp - INFO - test_feeds: 用例通过，请求时间：1.130841s
+2021-06-08 16:57:48,559 - search - INFO - test_search_suggest: 用例通过，请求时间：0.193294s
+2021-06-08 16:57:48,562 - ttp - INFO - test_bulletin: 用例通过，请求时间：0.201703s
+2021-06-08 16:57:48,782 - ttp - INFO - test_me_contents: 用例通过，请求时间：0.206621s
+2021-06-08 16:57:49,005 - ttp - INFO - test_me_contents: 用例通过，请求时间：0.207874s
+2021-06-08 16:57:49,023 - ttp - INFO - test_author_me: 用例通过，请求时间：0.212831s
+2021-06-08 16:57:49,131 - ttp - INFO - test_feeds: 用例通过，请求时间：0.756311s
+2021-06-08 16:57:49,267 - ttp - INFO - test_me_contents: 用例通过，请求时间：0.249262s
+2021-06-08 16:57:49,877 - ttp - INFO - test_author_me_update: 用例通过，请求时间：0.620862s
+2021-06-08 16:57:49,887 - ttp - INFO - test_feeds_touched: 用例通过，请求时间：0.202572s
+2021-06-08 16:57:49,895 - ttp - INFO - test_author_me_content: 用例通过，请求时间：0.614004s
+2021-06-08 16:57:50,831 - ttp - INFO - test_author_me_footprint: 用例通过，请求时间：0.9193s
+2021-06-08 16:57:50,937 - ttp - INFO - test_author_me_update: 用例通过，请求时间：0.820509s
+2021-06-08 16:57:51,043 - ttp - INFO - test_author_me_liked: 用例通过，请求时间：0.198472s
+2021-06-08 16:57:51,095 - ttp - INFO - test_feeds_touched: 用例通过，请求时间：0.197603s
+2021-06-08 16:57:51,259 - ttp - INFO - test_author_me_liked: 用例通过，请求时间：0.204832s
+2021-06-08 16:57:51,561 - ttp - INFO - test_author_me_content: 用例通过，请求时间：0.610272s
+2021-06-08 16:57:51,629 - ttp - INFO - test_author_me_liked: 用例通过，请求时间：0.358837s
+2021-06-08 16:57:51,764 - ttp - INFO - test_author_me_favored: 用例通过，请求时间：0.191186s
+2021-06-08 16:57:51,838 - ttp - INFO - test_author_me_favored: 用例通过，请求时间：0.198383s
+2021-06-08 16:57:51,971 - ttp - INFO - test_feeds_touched: 用例通过，请求时间：0.188952s
+2021-06-08 16:57:52,180 - ttp - INFO - test_send_feed_back: 用例通过，请求时间：0.195116s
+2021-06-08 16:57:52,192 - ttp - INFO - test_author_id: 用例通过，请求时间：0.198758s
+2021-06-08 16:57:52,275 - ttp - INFO - test_author_id_content: 用例通过，请求时间：0.204956s
+2021-06-08 16:57:52,486 - ttp - INFO - test_get_contents: 用例通过，请求时间：0.294114s
+2021-06-08 16:57:52,715 - ttp - INFO - test_author_id_content: 用例通过，请求时间：0.223171s
+2021-06-08 16:57:52,810 - ttp - INFO - test_author_id_content: 用例通过，请求时间：0.2446s
+2021-06-08 16:57:53,005 - ttp - INFO - test_contents: 用例通过，请求时间：0.275501s
+2021-06-08 16:57:53,040 - ttp - INFO - test_creat_contents: 用例通过，请求时间：0.253885s
+2021-06-08 16:57:53,219 - ttp - INFO - test_creat_contents: 用例通过，请求时间：0.191559s
+2021-06-08 16:57:53,695 - ttp - INFO - test_del_contents: 用例通过，请求时间：0.217149s
+2021-06-08 16:57:53,753 - ttp - INFO - test_creat_contents: 用例通过，请求时间：0.459622s
+2021-06-08 16:57:53,937 - ttp - INFO - test_creat_contents: 用例通过，请求时间：0.663578s
+2021-06-08 16:57:54,172 - ttp - INFO - test_contents_mark_view: 用例通过，请求时间：0.220701s
+2021-06-08 16:57:54,180 - ttp - INFO - test_contents_is_like: 用例通过，请求时间：0.261281s
+2021-06-08 16:57:54,374 - ttp - INFO - test_contents_snack: 用例通过，请求时间：0.219977s
+2021-06-08 16:57:54,394 - ttp - INFO - test_contents_report: 用例通过，请求时间：0.209255s
+2021-06-08 16:57:54,598 - ttp - INFO - test_contents_share: 用例通过，请求时间：0.210288s
+2021-06-08 16:57:54,857 - ttp - INFO - test_contents_is_cancel_like: 用例通过，请求时间：0.212837s
+2021-06-08 16:57:54,984 - ttp - INFO - test_contents_is_favored: 用例通过，请求时间：0.579192s
+2021-06-08 16:57:55,225 - ttp - INFO - test_contents_is_del_favored: 用例通过，请求时间：0.20204s
+2021-06-08 16:57:55,278 - ttp - INFO - test_contents_is_creat_favored: 用例通过，请求时间：0.204967s
+2021-06-08 16:57:55,810 - ttp - INFO - test_recommend_banner: 用例通过，请求时间：0.574624s
+2021-06-08 16:57:56,499 - ttp - INFO - test_guess_like_list: 用例通过，请求时间：1.255122s
