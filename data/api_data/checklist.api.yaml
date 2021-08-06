@@ -1,0 +1,197 @@
+headers: &headers
+  Content-Type: application/json;charset=utf8
+  token: ${token}
+  versionName: 2.0.8
+
+checklists:  # 创建清单 1
+  method: post
+  url: ${url}/checklists
+  params:
+  headers:
+    *headers
+  json:
+    title: ${title}
+    isPrivate: ${is_private}
+
+checklists_feeds:  # 清单首页列表 2
+  method: get
+  url: ${url}/checklists
+  params:
+  headers:
+    *headers
+  json:
+
+get_checklists:  # 获取清单信息 3
+  method: get
+  url: ${url}/checklists/${checklists_id}
+  params:
+  headers:
+    *headers
+  json:
+
+patch_checklists:  # 更新清单 4
+  method: patch
+  url: ${url}/checklists/${checklists_id}
+  params:
+  headers:
+    *headers
+  json:
+    title: ${title}
+    isPrivate: ${is_private}
+
+delete_checklists:  # 删除清单 5
+  method: delete
+  url: ${url}/checklists/${checklists_id}
+  params:
+  headers:
+    *headers
+  json:
+
+checklists_liked:  # 点赞清单 6
+  method: post
+  url: ${url}/checklists/${checklists_id}/liked
+  params:
+  headers:
+    *headers
+  json:
+
+delete_checklists_liked:  # 取消点赞 7
+  method: delete
+  url: ${url}/checklists/${checklists_id}/liked
+  params:
+  headers:
+    *headers
+  json:
+
+checklists_favored:  # 收藏清单 8
+  method: post
+  url: ${url}/checklists/${checklists_id}/favored
+  params:
+  headers:
+    *headers
+  json:
+
+delete_checklists_favored:  # 取消收藏 9
+  method: delete
+  url: ${url}/checklists/${checklists_id}/favored
+  params:
+  headers:
+    *headers
+  json:
+
+checklists_mark:  # 标记观看 10
+  method: post
+  url: ${url}/checklists/${checklists_id}/markView
+  params:
+  headers:
+    *headers
+  json:
+
+checklists_share:  # 分享 11
+  method: post
+  url: ${url}/checklists/${checklists_id}/markView
+  params:
+  headers:
+    *headers
+  json:
+
+checklists_contents:  # 获取清单下内容  12
+  method: get
+  url: ${url}/v2/checklists/${checklists_id}/contents
+  params:
+    checkPoint:
+    limit: 20
+  headers:
+    *headers
+  json:
+
+remove_checklists_contents:  # 移除清单下单品 13
+  method: post
+  url: ${url}/checklists/${checklists_id}/contents:remove
+  params:
+  headers:
+    *headers
+  json:
+    contents: ${contents_id}  # 单品id  list
+
+get_contents_checklists:  # 获取单品对应清单列表  14
+  method: get
+  url: ${url}/contents/${content_id}/checklists
+  params:
+    checkPoint:
+    limit: 20
+  headers:
+    *headers
+  json:
+
+add_contents_checklists:  # 将一个单品添加到多个清单  15
+  method: post
+  url: ${url}/v2/contents/${content_id}/checklists:add
+  params:
+    checkPoint:
+    limit: 20
+  headers:
+    *headers
+  json:
+    checklists: ${checklists}  #  清单id，list
+
+author_me_checklists:  # 获取当前用户的清单列表  16
+  method: get
+  url: ${url}/author/me/checklists
+  params:
+    checkPoint:
+    limit: 20
+  headers:
+    *headers
+  json:
+
+author_me_checklists_add:  # 获取单品能够被加入的清单列表  17
+  method: get
+  url: ${url}/author/me/checklistsToBeAdded
+  params:
+    checkPoint:
+    limit: 20
+    contentId: ${content_id}
+  headers:
+    *headers
+  json:
+
+author_checklists:  # 获取指定用户的清单列表  18
+  method: get
+  url: ${url}/author/${author_id}/checklists
+  params:
+    checkPoint:
+    limit: 20
+  headers:
+    *headers
+  json:
+
+search_checklists:  # 搜索清单列表 19
+  method: get
+  url: ${url}/search/checklists
+  params:
+    keyword: ${keyword}
+    checkPoint:
+    limit: 20
+  headers:
+    *headers
+  json:
+
+search_checklists_hints:  # 搜索关键字补全
+  method: get
+  url: ${url}/search/checklists/hints
+  params:
+    keyword: ${keyword}
+  headers:
+    *headers
+  json:
+
+batch_content_checklists:  # 空清单添加内容
+  method: post
+  url: ${url}/v2/batch/contents/checklists:add
+  params:
+  headers:
+    *headers
+  json:
+    contentIds: ${contentIds}
+    checklistIds: ${checklistIds}

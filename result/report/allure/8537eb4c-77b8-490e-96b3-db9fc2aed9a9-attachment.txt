@@ -1,0 +1,1 @@
+INFO     misc:base_api.py:42 test_splash_screen: 用例通过，请求时间：0.192425s

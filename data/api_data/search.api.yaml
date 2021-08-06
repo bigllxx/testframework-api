@@ -1,0 +1,28 @@
+headers: &headers
+  Content-Type: application/json;charset=utf8
+  token: ${token}
+  versionName: 2.0.8
+
+search_resource: # 搜索
+  method: get
+  url: ${url}/search/resource
+  params:
+    keyword: ${keyword}
+    searchType: ${resource_type}  # content, checklist, user
+    contentType: ${content_type}  # snack，post
+    offset: 0
+    limit: 20
+  headers:
+    *headers
+  json:
+
+search_suggest:  # 根据搜索补全关键词
+  method: get
+  url: ${url}/search/suggest
+  params:
+    keyword: ${keyword}
+    searchType: ${resource_type}
+    contentType: ${content_type}
+  headers:
+    *headers
+  json:

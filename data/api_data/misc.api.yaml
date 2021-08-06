@@ -1,0 +1,20 @@
+headers: &headers
+  Content-Type: application/json;charset=utf8
+  token: ${token}
+  versionName: 2.0.8
+
+health_check:  # 健康检查
+  method: get
+  url: ${url}/healthcheck
+  params:
+  headers:
+    *headers
+  json:
+
+splash_screen:
+  method: get
+  url: ${url}/v2/config/splashscreen
+  params:
+  headers:
+    *headers
+  json:

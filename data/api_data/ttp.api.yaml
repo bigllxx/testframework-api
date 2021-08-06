@@ -1,0 +1,461 @@
+headers: &headers
+  Content-Type: application/json;charset=utf8
+  token: ${token}
+  versionName: 2.0.8
+
+tab:  # 获取首页tab 1
+  method: get
+  url: ${url}/tab
+  params:
+  headers:
+    *headers
+  json:
+
+bulletin:  # 获取公告 2
+  method: get
+  url: ${url}/bulletin
+  params:
+  headers:
+    *headers
+  json:
+
+me_contents: # 获取个人文章列表 3
+  method: get
+  url: ${url}/me/contents
+  params:
+    state: ${state}
+    offset: 0
+    limit: 20
+  headers:
+    *headers
+  json:
+
+me_search_my_contents: # 搜索个人文章列表 4
+  method: get
+  url: ${url}/me/searchMyContents
+  params:
+    titleKeyWord: ${titleKeyWord}
+    state: ${state}
+    offset: 0
+    limit: 20
+  headers:
+    *headers
+  json:
+
+
+me: # 获取个人信息 5
+  method: get
+  url: ${url}/me
+  params:
+  headers:
+    *headers
+  json:
+
+feeds: # 获取首页文章列表 6
+  method: get
+  url: ${url}/feeds
+  params:
+    content_type: ${content_type}
+    tab: ${tab}
+  headers:
+    *headers
+  json:
+
+feeds_touched: # 获取首页文章列表（已经看到的文章上报接口）7
+  method: post
+  url: ${url}/feeds/touched
+  params:
+    fetchType: ${fetchType}
+  headers:
+    *headers
+  json:
+    ids: ${ids}
+
+favorite: # 获取收藏列表 8
+  method: get
+  url: ${url}/favorite
+  params:
+    begin: ${begin}  # 偏移id
+  headers:
+    *headers
+  json:
+
+send_feed_back: # 上传用户反馈 9
+  method: post
+  url: ${url}/sendfeedback
+  params:
+  headers:
+    *headers
+  json:
+    contact: ${contact}
+    content: ${content}
+
+author_me:  # 获取当前作者信息 10
+  method: get
+  url: ${url}/author/me
+  params:
+  headers:
+    *headers
+  json:
+
+author_me_update:  # 更新作者信息 11
+  method: patch
+  url: ${url}/author/me
+  params:
+  headers:
+    *headers
+  json:
+    nickname: ${nickname}
+    avatar: ${avatar}
+
+author_me_content:  # 我的发布  12
+  method: get
+  url: ${url}/author/me/content
+  params:
+    contentType: ${contentType}
+    offset: 0
+    limit: 20
+  headers:
+    *headers
+  json:
+
+author_me_footprint:  # 我的足迹 13
+  method: get
+  url: ${url}/v2/author/me/footprint
+  params:
+  headers:
+    *headers
+  json:
+
+author_me_liked:  # 我的点赞 14
+  method: get
+  url: ${url}/author/me/liked
+  params:
+    contentType: ${contentType}
+    offset: 0
+    limit: 20
+  headers:
+    *headers
+  json:
+
+author_me_favored:  # 我的收藏 15
+  method: get
+  url: ${url}/author/me/favored
+  params:
+    contentType: ${contentType}
+    offset: 0
+    limit: 20
+  headers:
+    *headers
+  json:
+
+author_id:  # 根据id获取作者信息 16
+  method: get
+  url: ${url}/author/${id}
+  params:
+  headers:
+    *headers
+  json:
+
+author_id_content:  # 根据作者id获取作者文章列表 17
+  method: get
+  url: ${url}/author/${id}/content
+  params:
+    content_type: ${content_type}
+    offset: 0
+    limit: 20
+  headers:
+    *headers
+  json:
+
+contents:  # 文章详情 20
+  method: get
+  url: ${url}/contents
+  params:
+    ids: ${ids}
+  headers:
+    *headers
+  json:
+
+creat_contents:  # 创建文章 21
+  method: post
+  url: ${url}/contents
+  params:
+  headers:
+    *headers
+  json:
+    state: ${state}  # 文章状态  normal, deleted, disable, draft
+    meta:  # 文章信息
+      title: ${title}  # 标题
+      covers:  # 封面 最多三张
+        - url: https://qinzi.static.hulaplanet.com/ttp/editor/e3e3278932b5d3dabf67d89cbb213bc2.jpg
+          mediaType: image  #  image, video
+          width: 5148
+          height: 2916
+      coverDisplayCount: 1  # 需要显示的张数
+      jsVersion: 54c85bf5b70e07e304e1ef3c17b5447a
+      cssVersion: 2f721b513239ed9fe8cb6e06d93fa713
+    extra:  # 正文内容
+      originJson:
+        - type: quote
+          children:
+            - text: ${quote_text}
+        - type: paragraph
+          children:
+            - text: ${paragraph_text}
+        - type: image
+          url: https://qinzi.static.hulaplanet.com/ttp/editor/ee96141d443187b43638200c823ed23c.png
+          isMinification: false
+          caption:
+            text: image.png
+          children:
+            - text: ''
+          width: 504
+          height: 238
+    top: false  # 是否置顶
+    tabs:  # 所属分类
+      - 10
+    labels: ${labels}  # 标签 list
+
+contents_snack:  # 发布呼啦圈 22
+  method: post
+  url: ${url}/contents/snack
+  params:
+  headers:
+    *headers
+  json:
+    meta:  # 文章元数据
+      title: ${title}
+      cover:
+        url: https://qinzi.static.hulaplanet.com/ttp/editor/12258899271042179452626196863853.jpeg
+        mediaType: image
+        width: 720
+        height: 1280
+    medias:  # 图片或视频信息
+      - url: https://qinzi.static.hulaplanet.com/ttp/editor/12258899271042179452626196863853.jpeg
+        mediaType: image
+        width: 720
+        height: 1280
+    content: ${content}  # 文章内容
+    labels:  ${labels}  # 标签  list
+    goods:  ${goods}  # 商品id  list
+    checklists: ${checklists}  # 清单id  list
+
+contents_snack_contentid:  # 更新呼啦圈  23
+  method: post
+  url: ${url}/contents/snack/${contentId}
+  params:
+  headers:
+    *headers
+  json:
+    meta: # 文章元数据
+      title: ${title}
+      cover:
+        url: https://qinzi.static.hulaplanet.com/ttp/editor/12258899271042179452626196863853.jpeg
+        mediaType: image
+        width: 720
+        height: 1280
+    medias: # 图片或视频信息
+      - url: https://qinzi.static.hulaplanet.com/ttp/editor/12258899271042179452626196863853.jpeg
+        mediaType: image
+        width: 720
+        height: 1280
+    content: ${content}  # 文章内容
+    labels: ${labels}  # 标签  list
+    goods: ${goods}  # 商品id  list
+    checklists: ${checklists}  # 清单id  list
+
+get_contents:  # 文章详情,创作者中心使用  24
+  method: get
+  url: ${url}/contents/${contentId}
+  params:
+    contentId: ${contentId}
+  headers:
+    *headers
+  json:
+
+patch_contents:  # 更新文章  25
+  method: patch
+  url: ${url}/contents/${contentId}
+  params:
+  headers:
+    *headers
+  json:
+    state: ${state}  # 文章状态  normal, deleted, disable, draft
+    meta: # 文章信息
+      title: ${title}  # 标题
+      covers: # 封面 最多三张
+        - url: https://qinzi.static.hulaplanet.com/ttp/editor/e3e3278932b5d3dabf67d89cbb213bc2.jpg
+          mediaType: image  #  image, video
+          width: 5148
+          height: 2916
+      coverDisplayCount: 1  # 需要显示的张数
+      jsVersion: 54c85bf5b70e07e304e1ef3c17b5447a
+      cssVersion: 2f721b513239ed9fe8cb6e06d93fa713
+    extra: # 正文内容
+      originJson:
+        - type: quote
+          children:
+            - text: ${quote_text}
+        - type: paragraph
+          children:
+            - text: ${paragraph_text}
+        - type: image
+          url: https://qinzi.static.hulaplanet.com/ttp/editor/ee96141d443187b43638200c823ed23c.png
+          isMinification: false
+          caption:
+            text: image.png
+          children:
+            - text: ''
+          width: 504
+          height: 238
+    top: false  # 是否置顶
+    tabs: # 所属分类
+      - 10
+    labels: ${labels}  # 标签 list
+
+del_contents:  # 删除文章  26
+  method: delete
+  url: ${url}/contents/${contentId}
+  params:
+  headers:
+    *headers
+  json:
+
+contents_mark_view:  # 标记已阅读  27
+  method: put
+  url: ${url}/contents/${contentId}/markView
+  params:
+  headers:
+    *headers
+  json:
+
+contents_is_liked:  # 文章是否已点赞  28
+  method: get
+  url: ${url}/contents/${contentId}/isLiked
+  params:
+  headers:
+    *headers
+  json:
+
+contents_is_like:  # 点赞  29
+  method: post
+  url: ${url}/contents/${contentId}/isLiked
+  params:
+  headers:
+    *headers
+  json:
+
+contents_is_cancel_like:  # 取消点赞  30
+  method: delete
+  url: ${url}/contents/${contentId}/isLiked
+  params:
+  headers:
+    *headers
+  json:
+
+contents_share:  # 分享  31
+  method: post
+  url: ${url}/contents/${contentId}/share
+  params:
+  headers:
+    *headers
+  json:
+
+contents_report:  # 举报 32
+  method: post
+  url: ${url}/contents/${contentId}/report
+  params:
+  headers:
+    *headers
+  json:
+
+contents_is_favored:  # 文章是否已关注  33
+  method: get
+  url: ${url}/contents/${contentId}/isFavored
+  params:
+  headers:
+    *headers
+  json:
+
+contents_is_creat_favored:  # 添加关注  34
+  method: post
+  url: ${url}/contents/${contentId}/isFavored
+  params:
+  headers:
+    *headers
+  json:
+
+contents_is_del_favored:  # 取消关注  35
+  method: delete
+  url: ${url}/contents/${contentId}/isFavored
+  params:
+  headers:
+    *headers
+  json:
+
+guess_like_list:  # 猜你喜欢  36
+  method: get
+  url: ${url}/guessLike/list
+  params:
+  headers:
+    *headers
+  json:
+
+recommend_banner:  # 首页banner推荐 37
+  method: get
+  url: ${url}/recommend/banner
+  params:
+  headers:
+    *headers
+  json:
+
+transfer:  # 转存图片  38
+  method: post
+  url: ${url}/transfer
+  params:
+  headers:
+    *headers
+  json:
+    file: ${file}
+    custom: ${custom}
+
+upload:  # 获取图片上传相关信息 39
+  method: post
+  url: ${url}/cupload
+  params:
+    type: ${type}
+    target: ${target}
+  headers:
+    *headers
+  json:
+    custom: ${custom}
+
+upload_sts:  # 获取oss临时token，给客户端sdk调用  40
+  method: get
+  url: ${url}/upload/sts
+  params:
+    target: ${target}  # editor, portrait, label, checklist
+  headers:
+    *headers
+  json:
+
+upload_callback:  # 文件上传回调，oss调用  41
+  method: post
+  url: ${url}/upload/callback
+  params:
+  headers:
+    *headers
+  json:
+    filename: ${filename}
+    size: ${size}
+    height: ${height}
+    width: ${width}
+
+upgrate:  # 获取升级信息  42
+  method: getiuo
+  url: ${url}/upgrate
+  params:
+  headers:
+    *headers
+  json:

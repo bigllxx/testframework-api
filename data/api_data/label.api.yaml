@@ -1,0 +1,56 @@
+headers: &headers
+  Content-Type: application/json;charset=utf8
+  token: ${token}
+  versionName: 2.0.8
+
+labels_search:  # 搜索标签
+  method: get
+  url: ${url}/labels:search
+  params:
+    text: ${text}
+  headers:
+    *headers
+  json:
+
+label_groups: # 获取所有标签分组
+  method: get
+  url: ${url}/labelGroups
+  params:
+  headers:
+    *headers
+  json:
+
+labels_id:  # 根据id获取单个标签
+  method: get
+  url: ${url}/labels/${labels_id}
+  params:
+  headers:
+    *headers
+  json:
+
+labels_id_contents:  # 获取标签下所有内容
+  method: get
+  url: ${url}/labels/${labels_id}/contents
+  params:
+  headers:
+    *headers
+  json:
+
+label:  # 获取标签列表
+  method: get
+  url: ${url}/v2/label
+  params:
+  headers:
+    *headers
+  json:
+
+label_contents:  # 标签页详情
+  method: get
+  url: ${url}/v2/contents
+  params:
+    labelGroupId: ${labelGroupId}
+    labelId: ${labelId}
+    labelStyle: showOnList
+  headers:
+    *headers
+  json:

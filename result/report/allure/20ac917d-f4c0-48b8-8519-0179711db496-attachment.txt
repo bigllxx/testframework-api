@@ -1,0 +1,1 @@
+INFO     goods:base_api.py:42 test_goods_parse: 用例通过，请求时间：0.187748s

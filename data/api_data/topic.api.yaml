@@ -1,0 +1,73 @@
+headers: &headers
+  Content-Type: application/json;charset=utf8
+  token: ${token}
+  versionName: 2.0.8
+
+topic_homepage:  # 获取所有话题/话题组
+  method: get
+  url: ${url}/v2/topic/homepage
+  params:
+  headers:
+  json:
+
+topic_all:  # 获取所有话题/话题组
+  method: get
+  url: ${url}/v2/topic/all
+  params:
+  headers:
+  json:
+
+topic_details:  # 话题下看法
+  method: get
+  url: ${url}/v2/topic/${topic_id}/details
+  params:
+  headers:
+    *headers
+  json:
+
+topic_follow:  # 关注话题
+  method: post
+  url: ${url}/v2/topic/${topic_id}/follow
+  params:
+  headers:
+    *headers
+  json:
+
+topic_unfollow:  # 取关话题
+  method: post
+  url: ${url}/v2/topic/${topic_id}/follow
+  params:
+  headers:
+    *headers
+  json:
+
+topic_content:  # 发布讨论
+  method: post
+  url: ${url}/v2/topic/content
+  params:
+  headers:
+    *headers
+  json:
+    topicId: ${topic_id}
+    meta:
+      cover:
+        url: 'https://static.mampod.cn/cms_media/editor_upload/23370117c64149ed90558b753df43a34.jpg'
+        width: 4032
+        height: 3024
+        mediaType: image
+    medias:
+      - url: 'https://static.mampod.cn/cms_media/editor_upload/23370117c64149ed90558b753df43a34.jpg'
+        width: 4032
+        height: 3024
+        mediaType: image
+    content: 今天我，寒夜里看雪飘过，怀着冷却了的心窝飘远方，风雨里追赶，雾里分不清影踪，天空海阔你共我，可会变今天我，寒夜里看雪飘过，怀着冷却了的心窝飘远方，风雨里追赶，雾里分不清影踪，天空海阔你共我，可会变今天我，寒夜里看雪飘过，怀着冷却了的心窝飘远方，风雨里追赶，雾里分不清影踪，天空海阔你共我，可会变今天我，寒夜里看雪飘过，怀着冷却了的心窝飘远方，风雨里追赶，雾里分不清影踪，天空海阔你共我，可会变今天我，寒夜里看雪飘过，怀着冷却了的心窝飘远方，风雨里追赶，雾里分不清影踪，天空海阔你共我，可会变今天我，寒夜里看雪飘过，怀着冷却了的心窝飘远方，风雨里追赶，雾里分不清影踪，天空海阔你共我，可会变今天我，寒夜里看雪飘过，怀着冷却了的心窝飘远方，风雨里追赶，雾里分不清影踪，天空海阔你共我，可会变今天我，寒夜里看雪飘过，怀着冷却了的心窝飘远方，风雨里追赶，雾里分不清影踪，天空海阔你共我，可会变今天我，寒夜里看雪飘过，怀着冷却了的心窝飘远方，风雨里追赶，雾里分不清影踪，天空海阔你共我，可会变
+    checklists:
+      - ${checklists_id}
+
+author_me_topic:  # 关注话题列表
+  method: get
+  url: ${url}/v2/author/me/topics
+  params:
+  headers:
+    *headers
+  json:

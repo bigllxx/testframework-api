@@ -1,0 +1,21 @@
+test_creat_comments:
+  -  # 正向流程，断言通过
+    - 这是一首简单的小情歌
+    - success
+  -  # 评论内容为空
+    - ''
+    - fail
+  -  # 和谐字符
+    - 文化大革命
+    - fail
+
+test_creat_comments_too:
+  -  # 正向流程
+    - bigllxx的追评
+    - success
+  -   # 评论内容为空
+    - ''
+    - fail
+  -  # 和谐字符
+    - 文化大革命
+    - fail

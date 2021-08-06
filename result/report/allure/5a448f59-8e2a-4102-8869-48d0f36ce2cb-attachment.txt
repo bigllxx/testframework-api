@@ -1,0 +1,1 @@
+INFO     ttp:base_api.py:42 test_contents_share: 用例通过，请求时间：0.210288s

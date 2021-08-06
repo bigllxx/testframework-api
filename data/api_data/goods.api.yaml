@@ -1,0 +1,23 @@
+headers: &headers
+  Content-Type: application/json;charset=utf8
+  token: ${token}
+  versionName: 2.0.8
+
+goods:  # 创建商品
+  method: post
+  url: ${url}/goods
+  params:
+  headers:
+    *headers
+  json:
+    parseStatus: ${parseStatus}
+    url: ${goods_url}
+
+goods_parse:  #根据链接解析商品
+  method: get
+  url: ${url}/goods:parse
+  params:
+    link: ${link}
+  headers:
+    *headers
+  json:

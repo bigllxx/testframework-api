@@ -1,0 +1,1 @@
+INFO     checklist:base_api.py:42 test_batch_content_checklists: 用例通过，请求时间：0.244541s
